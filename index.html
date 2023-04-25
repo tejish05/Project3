@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Project-3 TMDB & CHILL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        .mySlides {display:none;}
+    </style>
+</head>
+
+<body>
+<!-- Navigation Bar -->
+<div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+        <a href="index.html" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i><b>TMDB & Chill</b></a>
+        <div class="w3-right w3-hide-small">
+            <a href="map.html" class="w3-bar-item w3-button">Map</a>
+            <a href="dashboard.html" class="w3-bar-item w3-button">Dashboard</a>
+            <a href="about.html" class="w3-bar-item w3-button">About</a>
+            <div class="w3-dropdown-hover">
+                <button class="w3-button">More</button>
+
+<div class="w3-dropdown-content w3-bar-block w3-card-4 w3-dropdown-top-left" style="background-color: #fff; min-width: 200px; padding: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); border-radius: 4px;">
+  <a href="#Overview" class="w3-bar-item w3-button">Overview</a>
+  <a href="#Biases" class="w3-bar-item w3-button">Biases</a>
+  <a href="#Contact" class="w3-bar-item w3-button">Contact</a>
+</div>
+
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="w3-content w3-section" style="max-width:800px; padding:50px;">
+    <a href="https://www.netflix.com">
+        <img class="mySlides" src="https://c4.wallpaperflare.com/wallpaper/862/449/162/jack-reacher-star-wars-interstellar-movie-john-wick-wallpaper-preview.jpg" style="width: 100%">
+    </a>
+    <a href="https://www.netflix.com">
+        <img class="mySlides" src="https://wallpaperaccess.com/full/329583.jpg" style="width:100%">
+    </a>
+    <a href="https://www.netflix.com">
+        <img class="mySlides" src="https://cdn.wallpapersafari.com/86/95/Idsx01.jpg" style="width:100%">
+    </a>
+    <a href="https://www.netflix.com">
+        <img class="mySlides" src="https://wallpapercave.com/wp/wp2751453.jpg" style="width:100%">
+    </a>
+    <a href="https://www.netflix.com">
+        <img class="mySlides" src="https://images4.alphacoders.com/573/57394.jpg" style="width:100%">
+    </a>
+    <a href="https://www.netflix.com">
+        <img class="mySlides" src="https://c4.wallpaperflare.com/wallpaper/726/46/535/movies-hollywood-movies-wallpaper-preview.jpg" style="width:100%">
+
+      </a>
+    </div>
+  
+  <script>
+ 
+
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 3 seconds
+  }
+  </script>
+
+    <div id="Overview" class="w3-container" padding:50px;>
+        <h2 style="text-align: center; color: #ff1e1e; font-family: Arial; font-weight: bold; font-size: 200%;">Overview</h2>
+    <p style="font-size: 175%;">TMDB and Chill is a Flask-powered API data visualization project that provides an overview of 
+      movie genres from 1916 to 2016. The data for this project was obtained from <a href="https://www.kaggle.com/">Kaggle</a> 
+      and plotted in a visual manner, allowing users to easily compare and analyze the trends and patterns of the movie 
+      industry over the years. This project aims to provide valuable insights into the evolution of movie genres and the 
+      factors that influence their success, as well as to serve as a useful resource for researchers, movie enthusiasts, and 
+      industry professionals alike.</p>
+    
+    <h2 style="text-align: center; color: #ff1e1e; font-family:Arial; font-weight:bold;font-size: 200%;">Tools & Technology</h2>
+    <p style="font-size: 175%;">Below are some of the tools and technologies used to create the visualizations:</p>
+
+    <ul style="font-size: 165%;">
+        <li>Python</li>
+        <li>Flask</li>
+        <li>SQlite</li>
+        <li>JavaScript</li>
+        <li>Node.js</li>
+        <li>D3</li>
+        <li>CSS</li>
+        <li>HTML</li>
+    </ul>
+
+    <div id="Biases" class="w3-container"></div>
+<h2 style="text-align: center; color: #ff1e1e; font-family: Arial; font-weight:bold; font-size: 200%;">Biases & Further Considerations</h2>
+<p style="font-size: 175%;">Some factors that we should consider when analyzing this dataset are as follows:</p>
+<ul style="font-size: 165%;">
+    <li>Data quality analysis has not been performed</li>
+      <ul>
+        <li>Some genres were provided with a '#N/A' if genre was unknown</li>
+        <li>Missing budget and/or revenue were provided a value of zero</li>
+        <li>Revenue currency is not provided</li>
+      </ul>
+    <li>Selection bias:</li>
+    <ul>
+      <li>Dataset is not a full depiction of all movies (i.e., independent films, foreign films)</li>
+      <li>Self-imposed budget and revenue parameters for filtering</li>
+    </ul>
+</ul>
+
+
+    <div id="Acknowledgements" class="w3-container"></div>
+    <h2 style="text-align: center; color: #ff1e1e; font-family: Arial; font-weight: bold; font-size: 200%;">Acknowledgements</h2>
+    <p style="font-size: 175%;">The dataset was obtained from <a href="https://www.kaggle.com/">Kaggle</a>, which had been generated from The Movie Database API.
+        A further thanks goes to all the instructors through the edX University of Toronto Data Analytics Boot Camp.</p>
+        <br><br>
+            <p style="font-size:175%; text-align: center; color: #ff1e1e; font-family: Arial; font-weight: bold; "> Shout Out: </p>
+            <p style="font-size:175%; text-align:center;">A special thanks to Richard Gu for being a stellar support!</p>
+
+
+      <style>
+        #Contact {
+          background-color: #a9a9a9; /* Replace with the desired color code */
+          padding-top: 50px;
+        }
+      </style>
+    <!-- Contact Container -->
+    <style>
+        #Contact {
+          padding-top: 50px;
+        }
+      </style>
+      
+      <div class="w3-container w3-padding-64 w3-theme-l5" id="Contact">
+        <div class="w3-row">
+          <div class="w3-col m5">
+            <div class="w3-padding-16" id="Contact Us"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
+
+            <h3>Address</h3>
+            <p>University Of Data Analyst</p>
+            <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Toronto, CA</p>
+            <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +01 1515151515</p>
+            <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  info@tmdbandchill.com</p>
+          </div>
+          <div class="w3-col m7">
+            <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
+              <div class="w3-section">      
+                <label>Name</label>
+                <input class="w3-input" type="text" name="Name" required>
+              </div>
+              <div class="w3-section">      
+                <label>Email</label>
+                <input class="w3-input" type="text" name="Email" required>
+              </div>
+              <div class="w3-section">      
+                <label>Message</label>
+                <input class="w3-input" type="text" name="Message" required>
+              </div>  
+              <input class="w3-check" type="checkbox" checked name="Like">
+              <label>I Like it!</label>
+              <button type="submit" class="w3-button w3-right w3-theme">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+
+    <!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+    <h4>Follow Us</h4>
+    <a class="w3-button w3-large w3-teal" href="https://www.facebook.com/" title="Facebook"><i class="fa fa-facebook"></i><b>F</b></a>
+    <a class="w3-button w3-large w3-teal" href="https://twitter.com/?lang=en" title="Twitter"><i class="fa fa-twitter"></i><b>t</b></a>
+    <a class="w3-button w3-large w3-teal" href="https://www.google.com/" title="Google +"><i class="fa fa-google-plus"></i><b>G</b></a>
+    <a class="w3-button w3-large w3-teal" href="https://www.instagram.com/" title="Instagram +"><i class="fa fa-instagram"></i><b>I</b></a>
+    <a class="w3-button w3-large w3-teal w3-hide-small" href="https://www.linkedin.com/" title="Linkedin"><i class="fa fa-linkedin"></i><b>L</b></a>
+    
+  
+    <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+      <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
+      <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+      <i class="fa fa-chevron-circle-up"></i></span></a>
+    </div>
+</footer>
+   
+</body>
+
+
+</body>
+
+</body>
+</html>

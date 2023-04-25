@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>TMDB and Chill</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    /* Create two equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 50%;
+      padding: 10px;
+      height: 300px; /* Should be removed. Only for demonstration */
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+    </style>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+      <a href="index.html" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i><b>TMDB &
+          Chill</b></a>
+      <div class="w3-right w3-hide-small">
+        <a href="/map.html" class="w3-bar-item w3-button">Map</a>
+        <a href="dashboard.html" class="w3-bar-item w3-button">Dashboard</a>
+        <div class="w3-dropdown-hover">
+          <button class="w3-button">More</button>
+
+          <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-dropdown-top-left"
+            style="background-color: #fff; min-width: 200px; padding: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); border-radius: 4px;">
+            <a href="index.html#Overview" class="w3-bar-item w3-button">Overview</a>
+            <a href="index.html#Biases" class="w3-bar-item w3-button">Biases</a>
+            <a href="index.html#Contact" class="w3-bar-item w3-button">Contact</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <br></br><br>
+
+  <!-- About Us Page Title -->
+  <div style="background-color:#51bee9;padding:20px;">
+    <h1 style="font-size:300%;text-align:center">About Us</h1>
+  </div>
+  <br></br>
+
+  <!-- Members -->
+  <div class="row">
+    <div class="column">
+      <h2 style="text-align:center; font-size:300%"><strong>Lan Trinh</strong></h2>
+      <img src="../Photos/lsphoto.jpeg" style="width:30%;" class="center">
+      <ul style="list-style-type:none; font-size:150%; text-align:center;">
+        <li><strong>About:</strong> Financial Analyst, Wannabe Data Analyst</li>
+        <li><strong>Likes:</strong> Cliff jumping</li>
+        <li><strong>Something Interesting:</strong> Cannot bake a cake but makes a perfect souffle</li>   
+      </ul>
+    </div>
+    <div class="column">
+      <h2 style="text-align:center; font-size:300%"><strong>Anumta Khan</strong></h2>
+      <img src="../Photos/akphoto.jpeg" style="width:30%" class="center">
+      <ul style="list-style-type:none; font-size:150%; text-align:center;"">
+        <li><strong>About:</strong> Data Scientist at IBM</li>
+        <li><strong>Likes:</strong> Cliff jumping</li>
+        <li><strong>Something Interesting:</strong> Swam with sharks</li>   
+      </ul>
+    </div>
+  </div>
+  <br></br> <br></br> <br></br>  <br></br> <br></br> <br></br>  <br></br>  
+  <div class="row">
+    <div class="column" class="center">
+      <h2 style="text-align:center; font-size:300%"><strong>Tejas Sharma</strong></h2>
+      <img src="../Photos/tsphoto.jpeg" style="width:30%;" class="center">
+      <ul style="list-style-type:none; font-size:150%; text-align:center;">
+        <li><strong>About:</strong> The Sailor Man & Future Data Analyst</li>
+        <li><strong>Likes:</strong> Sailing, swimming, travelling and learning new skills</li>
+        <li><strong>Something Interesting:</strong> Travelled more than 20 countries</li>
+        <br></br>
+        <br></br>
+        <br></br>
+      </ul>  
+    </div>
+    <div class="column">
+      <h2 style="text-align:center; font-size:300%"><strong>Tiara Mardosas</strong></h2>
+      <img src="../Photos/tmphoto.jpg" style="width:30%" class="center">
+      <ul style="list-style-type:none; font-size:150%; text-align:center;">
+        <li><strong>About:</strong> Physiotherapist for Olympic Athletes, Future Data Analyst</li>
+        <li><strong>Likes:</strong> Baking</li>
+        <li><strong>Something Interesting:</strong> Went hang gliding in the Swiss Alps</li>
+        <br></br>
+      </ul>
+    </div>
+  </div>
+  <br></br> <br></br> <br></br>  <br></br> <br></br> <br></br>  <br></br> <br></br> <br></br>
+ 
+
+  <!-- Footer -->
+  <footer class="w3-container-fluid text-center">
+    <div style="background-color:#51bee9;;padding:50px;">
+    </div>
+  </footer>
+
+</body>
+
+</html>
